@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <link rel="icon" href="/images/weather.png">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    {{>header}}
+    <div>
+        <label>
+            Location:
+            <input id="location" type="text" placeholder="Type here">
+        </label>
+        <button onclick="getForecast(event)">Search</button>
+    </div>
+
+    <p id="forecast"></p>
+    {{>footer}}
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
